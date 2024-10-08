@@ -23,18 +23,19 @@ for s in turtle_shapes:
 startx = 0
 starty = 0
 
+direction = 90
 #
 for t in my_turtles:
   t.goto(startx, starty)
+  t.setheading(direction)
   t.pendown()
   t.right(45)
   t.forward(50)
-
+  direction = t.heading()
 #
-  t.penup()
+
   startx = startx + 50
   starty = starty + 50
-  t.pendown()
 
 wn = trtl.Screen()
 wn.mainloop()
