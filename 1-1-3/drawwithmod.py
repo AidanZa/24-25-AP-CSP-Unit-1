@@ -20,8 +20,7 @@ for floor in range(num_floors):
     painter.goto(x, y)
     painter.color(color)
     if floor % 3 == 0:
-
-    y = y + 5  # location of next floor
+        y = y + 5  # location of next floor
 
     # draw the floor
     painter.pendown()
